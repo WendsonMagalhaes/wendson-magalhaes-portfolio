@@ -1,0 +1,140 @@
+.contact-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--bg-color-one);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.contact-subtitle {
+    font-size: 2.25rem;
+    color: var(--text-color-secondary);
+    z-index: 2;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.contact-title {
+    font-size: calc(1.95rem + 4.4vw);
+    opacity: 0.1;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    background-color: var(--underline-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    margin-top: -20px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color-header);
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: var(--bg-color-header);
+    color: var(--text-color-secondary);
+
+}
+
+
+.contact-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-whatsapp p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.contact-whatsapp .btn-whatsapp,
+.contact-form .submit-btn {
+    padding: 16px 28px;
+    border: 3px solid var(--icon-color);
+    background-color: transparent;
+    color: var(--text-color-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, var(--icon-color) 50%, transparent 50%);
+    background-size: 400%;
+    background-position: 100%;
+    transition: background-position 300ms ease-in-out;
+}
+
+
+.contact-whatsapp .btn-whatsapp:hover,
+.contact-form .submit-btn:hover {
+    background-position: 0;
+    color: var(--text-color-home);
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}

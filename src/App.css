@@ -1,0 +1,48 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  width: calc(100vw - 260px);
+  overflow-x: hidden;
+  margin-left: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 1800px;
+  /* ou o valor que desejar limitar */
+  min-height: 80vh;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    width: 100vw;
+    margin-left: 0;
+    padding-top: 60px;
+    /* altura do .top-header */
+  }
+
+  section {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

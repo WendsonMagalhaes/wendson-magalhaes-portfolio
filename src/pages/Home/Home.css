@@ -1,0 +1,237 @@
+.home-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.home-container {
+    padding: 40px;
+    border-radius: 12px;
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.home-container h1 {
+    font-size: 3.5rem;
+}
+
+.home-container h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    /* ou a cor de preenchimento */
+    -webkit-text-stroke: 2px var(--text-color-secondary);
+    /* contorno nas letras */
+    text-stroke: 2px var(--text-color-secondary);
+    /* suporte futuro */
+}
+
+
+.home-container strong {
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: var(--icon-color);
+    /* ou a cor de preenchimento */
+    -webkit-text-stroke: 2px var(--icon-color);
+    /* contorno nas letras */
+    text-stroke: 2px var(--icon-color);
+    /* suporte futuro */
+}
+
+.home-info h1,
+.home-info h2 {
+    margin: 4px 0;
+    /* diminui a margem vertical entre os elementos */
+    line-height: 1.2;
+    /* reduz a altura da linha, se necessário */
+}
+
+.home-container p {
+    width: 50%;
+    text-align: justify;
+}
+
+
+
+.btn-contact {
+    position: relative;
+    background: linear-gradient(-30deg, var(--bg-color-one) 50%, var(--bg-color-tow) 50%);
+    padding: 20px 40px;
+    margin: 12px;
+    display: inline-block;
+    color: var(--text-color-secondary);
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    /* ou a cor de preenchimento */
+    -webkit-text-stroke: 1px var(--text-color-secondary);
+    /* contorno nas letras */
+    text-stroke: 1px var(--text-color-secondary);
+    /* suporte futuro */
+}
+
+.btn-contact::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s opacity ease-in-out;
+    z-index: 0;
+}
+
+.btn-contact:hover::before {
+    opacity: 0.2;
+}
+
+.btn-contact span {
+    position: absolute;
+    z-index: 1;
+}
+
+.btn-contact span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, rgba(8, 20, 43, 0), var(--icon-color));
+    animation: animateTop 2s linear infinite;
+}
+
+.btn-contact span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 20, 43, 0), var(--icon-color));
+    animation: animateRight 2s linear -1s infinite;
+}
+
+.btn-contact span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgba(8, 20, 43, 0), var(--icon-color));
+    animation: animateBottom 2s linear -1s infinite;
+}
+
+.btn-contact span:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), var(--icon-color));
+    animation: animateLeft 2s linear infinite;
+}
+
+
+@keyframes animateTop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animateRight {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes animateLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animateBottom {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    background-color: var(--bg-btn-home);
+    transform: translateY(-2px);
+    outline: none;
+    color: var(--text-color-home)
+}
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--icon-color);
+    }
+}
+
+.arrow-down {
+    font-size: 40px;
+    color: var(--text-color-secondary);
+    /* ou substitua por uma cor ex: #fff */
+    animation: bounceDown 1.2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounceDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-container {
+        height: 60%;
+    }
+
+}

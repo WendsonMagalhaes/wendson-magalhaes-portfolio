@@ -1,0 +1,163 @@
+.summary-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--bg-color-one);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-container {
+    padding: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.summary-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.summary-subtitle {
+    font-size: 2.25rem;
+    color: var(--text-color-secondary);
+    z-index: 2;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.summary-title {
+    font-size: calc(1.95rem + 4.4vw);
+    opacity: 0.1;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    background-color: var(--underline-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+    margin-top: -20px;
+}
+
+.summary-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+
+}
+
+/* Responsivo: 1 por linha em telas menores */
+@media (max-width: 768px) {
+    .summary-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilização opcional para os cards */
+.summary-info {
+    background-color: var(--bg-color-one);
+    color: var(--text-color-primary);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.summary-info-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--underline-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 160px;
+    color: var(--text-color-home);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.logo-lt-img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    margin-left: -15px;
+    margin-top: 10px;
+
+}
+
+.logo-grupo-digna-img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+.logo-aec-img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+
+.summary-info-logo h4 {
+    margin-top: -10px;
+    color: var(--underline-color);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.summary-info-description {
+    line-height: 1.2;
+    font-size: 18px;
+
+}
+
+.summary-info-description p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.summary-info-description p:first-child {
+    font-weight: 900;
+}
+
+.summary-info-description ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.summary-info-description li {
+    margin-bottom: 12px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+@media (max-width: 992px) {
+    .summary-container {
+        margin-left: 0;
+    }
+
+}
