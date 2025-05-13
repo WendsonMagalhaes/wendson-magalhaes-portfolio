@@ -213,3 +213,20 @@
     }
 
 }
+
+@media (max-width: 480px) {
+    .top-nome {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .icon-header {
+        transition: color 0.3s ease;
+        font-size: 1.2rem;
+        color: var(--border-color-header);
+    }
+
+    .toggle-switch {
+        top: 18px;
+    }
+}

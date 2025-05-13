@@ -30,3 +30,26 @@
 .icon {
     font-size: 14px;
 }
+
+@media (max-width: 480px) {
+    .toggle-switch {
+        width: 50px;
+        height: 20px;
+
+    }
+
+    .switch {
+
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .switch.light {
+        transform: translateX(28px);
+    }
+
+    .icon {
+        font-size: 10px;
+    }
+}
