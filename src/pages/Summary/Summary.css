@@ -161,3 +161,40 @@
     }
 
 }
+
+@media (max-width: 480px) {
+    .summary-title {
+        font-size: calc(2.95rem + 4.4vw);
+
+    }
+
+    .summary-subtitle {
+        font-size: 1.6rem;
+
+    }
+
+    .summary-info-logo h4 {
+
+        font-size: 18px;
+    }
+
+    .summary-info-description {
+        font-size: 16px;
+
+    }
+
+    .summary-info-description p {
+        margin-bottom: 14px;
+    }
+
+    .summary-info-date {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .summary-content {
+        width: 115%;
+        margin-left: -8%;
+    }
+
+}

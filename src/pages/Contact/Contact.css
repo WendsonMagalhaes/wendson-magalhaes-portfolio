@@ -133,6 +133,46 @@
     color: var(--text-color-home);
 }
 
+@media (max-width: 480px) {
+
+
+    .contact-title {
+        font-size: calc(2.95rem + 4.4vw);
+
+    }
+
+    .contact-subtitle {
+        font-size: 1.6rem;
+
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form form {
+        font-size: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .contact-whatsapp h2 {
+        width: 120%;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+
+    .contact-whatsapp .btn-whatsapp,
+    .contact-form .submit-btn {
+        padding: 16px 18px;
+        font-size: 14px;
+
+    }
+}
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;

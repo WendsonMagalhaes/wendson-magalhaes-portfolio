@@ -299,3 +299,15 @@
 .modal-nav .active {
     color: var(--underline-color);
 }
+
+@media (max-width: 480px) {
+    .portfolio-title {
+        font-size: calc(2.95rem + 4.4vw);
+
+    }
+
+    .portfolio-subtitle {
+        font-size: 1.6rem;
+
+    }
+}

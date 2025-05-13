@@ -159,3 +159,63 @@
     background-position: 0;
     color: var(--text-color-home);
 }
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: calc(2.95rem + 4.4vw);
+
+    }
+
+    .about-subtitle {
+        font-size: 1.6rem;
+
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-description {
+        font-size: 16px;
+
+    }
+
+    .about-description .about-nome {
+        font-size: 20px;
+        -webkit-text-stroke: .5px var(--icon-color);
+        text-stroke: .5px var(--icon-color);
+
+    }
+
+    .about-description strong {
+        -webkit-text-stroke: .5px var(--color-text);
+        text-stroke: .5px var(--color-text);
+    }
+
+    .about-containet-btn {
+        gap: 20px;
+    }
+
+    .about-containet-btn .btn-cv,
+    .about-containet-btn .btn-whatsapp {
+        padding: 16px 18px;
+        font-size: 14px;
+
+    }
+
+    .about-containet-btn .btn-cv {
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+    .icon-btn-cv {
+        font-size: 12px;
+
+    }
+
+    .about-info li {
+        font-size: 12px;
+
+    }
+
+}
