@@ -57,6 +57,33 @@
   color: #fff;
 }
 
+/* Define a barra de rolagem */
+::-webkit-scrollbar {
+  width: 15px;
+  /* largura da vertical */
+  height: 10px;
+  /* altura da horizontal, se necessário */
+}
+
+/* Fundo da barra (trilho) */
+::-webkit-scrollbar-track {
+  background: rgba(30, 0, 50, 0.6);
+  border-radius: 10px;
+}
+
+/* Parte arrastável (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #6E0184;
+  border-radius: 10px;
+  border: 2px solid rgba(30, 0, 50, 0.8);
+}
+
+/* Hover com brilho neon */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #D300FF;
+  box-shadow: 0 0 10px #D300FF;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

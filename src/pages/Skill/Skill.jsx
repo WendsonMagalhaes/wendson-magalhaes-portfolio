@@ -70,25 +70,45 @@ export default function Skill() {
                         </div>
                         <div className="skills-container">
                             <div className="skill-card"><FaReact className="icon-skills" />
-                                React</div>
+                                React
+
+                            </div>
                             <div className="skill-card"><IoLogoNodejs className="icon-skills" />
-                                NodeJS</div>
+                                NodeJS
+                            </div>
                             <div className="skill-card"><FaNode className="icon-skills" />
-                                Node</div>
+                                Node
+
+                            </div>
                             <div className="skill-card"><RiJavascriptFill className="icon-skills" />
-                                <span>JavaScript</span></div>
-                            <div className="skill-card"><BiLogoTypescript className="icon-skills" /> <span>Typescript</span></div>
-                            <div className="skill-card"><TbBrandReactNative className="icon-skills" /> <span>React Native</span></div>
-                            <div className="skill-card"><SiExpress className="icon-skills" /> <span>Express.js</span></div>
-                            <div className="skill-card"><TbFileTypeSql className="icon-skills" /> <span>SQL</span></div>
-                            <div className="skill-card"><BiLogoPostgresql className="icon-skills" /> <span>PosygreSQL</span></div>
-                            <div className="skill-card"><SiSqlite className="icon-skills" /> <span>SQLite</span></div>
-                            <div className="skill-card"><SiHtml5 className="icon-skills" /> <span>HTML5</span></div>
-                            <div className="skill-card"><SiCss3 className="icon-skills" /> <span>CSS3</span></div>
-                            <div className="skill-card"><FaGithubSquare className="icon-skills" /> <span>Git/GitHub</span></div>
-                            <div className="skill-card"><SiGooglemaps className="icon-skills" /> <span>Google Maps API</span></div>
-                            <div className="skill-card"><SiGooglesheets className="icon-skills" /> <span>Goglle Sheets API</span></div>
-                            <div className="skill-card"><RiFileExcel2Fill className="icon-skills" /> <span>Excel</span></div>
+                                JavaScript
+
+                            </div>
+                            <div className="skill-card"><BiLogoTypescript className="icon-skills" /> Typescript
+                            </div>
+                            <div className="skill-card"><TbBrandReactNative className="icon-skills" /> React Native
+                            </div>
+                            <div className="skill-card"><SiExpress className="icon-skills" /> Express.js
+                            </div>
+                            <div className="skill-card"><TbFileTypeSql className="icon-skills" /> SQL
+                            </div>
+                            <div className="skill-card"><BiLogoPostgresql className="icon-skills" /> PosygreSQL
+                            </div>
+                            <div className="skill-card"><SiSqlite className="icon-skills" /> SQLite
+                            </div>
+                            <div className="skill-card"><SiHtml5 className="icon-skills" /> HTML5
+
+                            </div>
+                            <div className="skill-card"><SiCss3 className="icon-skills" /> CSS3
+                            </div>
+                            <div className="skill-card"><FaGithubSquare className="icon-skills" /> Git/GitHub
+                            </div>
+                            <div className="skill-card"><SiGooglemaps className="icon-skills" /> Google Maps API
+                            </div>
+                            <div className="skill-card"><SiGooglesheets className="icon-skills" /> Goglle Sheets API
+                            </div>
+                            <div className="skill-card"><RiFileExcel2Fill className="icon-skills" /> Excel
+                            </div>
                         </div>
                     </div>
                 </div>

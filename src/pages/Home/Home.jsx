@@ -50,7 +50,14 @@ export default function Home() {
 
             </div>
 
-            <div className="arrow-down"><FaAngleDown />
+            <div className="arrow-down"><FaAngleDown onClick={() => {
+                const section = document.getElementById('about-section');
+                section?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'center',
+                });
+            }} />
             </div>
 
 

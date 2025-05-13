@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function About() {
     return (
-        <div id="about" className="about-section">
+        <div id="about-section" className="about-section">
             <div className="about-container">
                 <div className="about-header">
                     <h2 className="about-title">SOBRE MIM</h2>

@@ -178,3 +178,31 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 800px) {
+    .contact-form h2 {
+        font-size: 18px;
+    }
+
+    .contact-form form {
+        font-size: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .contact-whatsapp h2 {
+        width: 120%;
+        margin-left: 15%;
+        font-size: 18px;
+    }
+
+    .contact-whatsapp .btn-whatsapp,
+    .contact-form .submit-btn {
+        padding: 16px 18px;
+        font-size: 14px;
+
+    }
+}

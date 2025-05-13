@@ -219,3 +219,52 @@
     }
 
 }
+
+@media (max-width: 800px) {
+    .about-container {
+        width: 98%;
+    }
+
+    .about-description {
+        font-size: 16px;
+
+    }
+
+    .about-description .about-nome {
+        font-size: 20px;
+        -webkit-text-stroke: .5px var(--icon-color);
+        text-stroke: .5px var(--icon-color);
+
+    }
+
+    .about-description strong {
+        -webkit-text-stroke: .5px var(--color-text);
+        text-stroke: .5px var(--color-text);
+    }
+
+    .about-containet-btn {
+        gap: 20px;
+    }
+
+    .about-containet-btn .btn-cv,
+    .about-containet-btn .btn-whatsapp {
+        padding: 16px 18px;
+        font-size: 12px;
+
+    }
+
+    .about-containet-btn .btn-cv {
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+    .icon-btn-cv {
+        font-size: 10px;
+
+    }
+
+    .about-info li {
+        font-size: 14px;
+
+    }
+}
