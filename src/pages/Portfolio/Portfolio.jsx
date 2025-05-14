@@ -84,33 +84,26 @@ export default function Portfolio() {
     const filteredProjects = filter === 'Todos'
         ? projects
         : projects.filter(p => {
-            // Verifica se o tipo do projeto é "Sistema Web e Aplicativo"
             if (p.type === 'Sistema Web e Aplicativo') {
-                // Se o tipo for "Sistema Web e Aplicativo", verificamos se o filtro contém qualquer uma das palavras
                 return p.type.toLowerCase().includes(filter.toLowerCase());
             } else {
-                // Caso contrário, verifica diretamente o tipo do projeto com o filtro
                 return p.type.toLowerCase().includes(filter.toLowerCase());
             }
         });
     const [selectedIndex, setSelectedIndex] = useState(null);
 
-    // Função para abrir o projeto
     const openProject = (index) => {
         setSelectedIndex(index);
     };
 
-    // Função para fechar o modal
     const closeModal = () => {
         setSelectedIndex(null);
     };
 
-    // Função para navegar entre os projetos (próximo)
     const nextProject = () => {
         setSelectedIndex((prev) => (prev < filteredProjects.length - 1 ? prev + 1 : prev));
     };
 
-    // Função para navegar entre os projetos (anterior)
     const prevProject = () => {
         setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
     };
@@ -143,7 +136,7 @@ export default function Portfolio() {
                         <div
                             key={project.id}
                             className={`portfolio-card card${index + 1}`}
-                            onClick={() => openProject(index)} // Abre o projeto ao clicar
+                            onClick={() => openProject(index)}
                         >
                             <img src={project.images[0]} alt={project.name} />
                             <div className="card-overlay">
@@ -169,7 +162,6 @@ export default function Portfolio() {
                                 ×
                             </button>
                             <div className="modal-conteudo">
-                                {/* Navegação entre projetos */}
                                 <div className='modal-nav'>
                                     <button className="btn-nav left" onClick={prevProject}>
                                         <FaAngleLeft />
