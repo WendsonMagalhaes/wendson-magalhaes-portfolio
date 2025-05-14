@@ -14,7 +14,7 @@ const projects = [
     {
         id: 1,
         name: 'Andarilho',
-        type: 'Sistema Web e Mobile',
+        type: 'Sistema Web e Aplicativo',
         description: 'Sistema inteligente de marcação de ponto externo com registro via GPS, ideal para equipes em campo.',
         technologies: 'React.js, React Native, Node.js, Express, PostgreSQL, Google Maps API, JWT/Firebase Auth',
         date: 'Mai 2025',
@@ -25,7 +25,7 @@ const projects = [
     {
         id: 2,
         name: 'CheckFly',
-        type: 'Sistema Web e Mobile',
+        type: 'Sistema Web e Aplicativo',
         description: 'Sistema de gerenciamento de tarefas com suporte a subtarefas, listas personalizadas, favoritos e progresso visual. Permite criar, agendar e acompanhar atividades com foco em produtividade e organização.',
         technologies: 'React.js, Node.js, Express, TypeScript, PostgreSQL, Tailwind CSS, @tabler/icons-react',
         date: 'Jul 2024',
@@ -69,7 +69,7 @@ const projects = [
     {
         id: 6,
         name: 'Registra Aí Boy',
-        type: 'Sistema Web e Mobile',
+        type: 'Sistema Web e Aplicativo',
         description: 'Aplicação para motoboys cobradores registrarem negociações realizadas com clientes durante cobranças, com funcionalidades de autenticação, autorização e gestão de descontos.',
         technologies: 'React.js, React Native, Node.js, PostgreSQL, JWT',
         date: 'Jun 2024',
@@ -81,7 +81,18 @@ const projects = [
 
 export default function Portfolio() {
     const [filter, setFilter] = useState('Todos');
-    const filteredProjects = filter === 'Todos' ? projects : projects.filter(p => p.type === filter);
+    const filteredProjects = filter === 'Todos'
+        ? projects
+        : projects.filter(p => {
+            // Verifica se o tipo do projeto é "Sistema Web e Aplicativo"
+            if (p.type === 'Sistema Web e Aplicativo') {
+                // Se o tipo for "Sistema Web e Aplicativo", verificamos se o filtro contém qualquer uma das palavras
+                return p.type.toLowerCase().includes(filter.toLowerCase());
+            } else {
+                // Caso contrário, verifica diretamente o tipo do projeto com o filtro
+                return p.type.toLowerCase().includes(filter.toLowerCase());
+            }
+        });
     const [selectedIndex, setSelectedIndex] = useState(null);
 
     // Função para abrir o projeto
