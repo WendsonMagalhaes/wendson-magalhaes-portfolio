@@ -178,6 +178,23 @@
     grid-row: 2;
 }
 
+.tech-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    background: rgba(30, 0, 50, 1);
+
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid var(--icon-color0);
+    cursor: default;
+}
 
 
 /* ===== Modal ===== */

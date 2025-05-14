@@ -14,63 +14,69 @@ const projects = [
     {
         id: 1,
         name: 'Andarilho',
-        type: 'Sistema Web',
-        description: 'Sistema de segurança e monitoramento.',
-        technologies: 'React, Node.js, MongoDB',
-        date: 'Jan 2023',
-        url: 'https://ltsecurity.com.br',
+        type: 'Sistema Web e Mobile',
+        description: 'Sistema inteligente de marcação de ponto externo com registro via GPS, ideal para equipes em campo.',
+        technologies: 'React.js, React Native, Node.js, Express, PostgreSQL, Google Maps API, JWT/Firebase Auth',
+        date: 'Mai 2025',
+        url: 'https://andarilho.com.br',
         images: [imgAndarilho],
-    },
+    }
+    ,
     {
         id: 2,
-        name: 'CheckFlly',
-        type: 'Sistema Web',
-        description: 'Plataforma de gestão financeira.',
-        technologies: 'React, SQL Server, Express',
-        date: 'Mar 2023',
-        url: 'https://grupodigna.com.br',
+        name: 'CheckFly',
+        type: 'Sistema Web e Mobile',
+        description: 'Sistema de gerenciamento de tarefas com suporte a subtarefas, listas personalizadas, favoritos e progresso visual. Permite criar, agendar e acompanhar atividades com foco em produtividade e organização.',
+        technologies: 'React.js, Node.js, Express, TypeScript, PostgreSQL, Tailwind CSS, @tabler/icons-react',
+        date: 'Jul 2024',
+        url: 'https://checkfly.com.br',
         images: [imgCheckFly],
-    },
+    }
+    ,
     {
         id: 3,
         name: 'Shopper Driver',
-        type: 'Aplicativo',
-        description: 'Aplicativo de comunicação interna.',
-        technologies: 'React Native, Firebase',
-        date: 'Mai 2023',
-        url: 'https://aec.com.br/app',
+        type: 'Sistema Web',
+        description: 'Sistema de mobilidade inspirado em apps como Uber e 99, com foco exclusivo na experiência do passageiro. Permite solicitação de corridas com visualização de rotas e endereços via Google Maps.',
+        technologies: 'React.js, Node.js, Express, TypeScript, SQLite, Google Maps API',
+        date: 'Mai 2025',
+        url: 'https://shopperdriver.com.br',
         images: [imgShopperDriver],
-    },
+    }
+    ,
     {
         id: 4,
         name: 'Digna Melius',
-        type: 'Aplicativo',
-        description: 'Aplicativo de comunicação interna.',
-        technologies: 'React Native, Firebase',
-        date: 'Mai 2023',
-        url: 'https://aec.com.br/app',
+        type: 'Sistema Web',
+        description: 'Sistema completo para registro, gerenciamento e tratativa de reclamações. Conta com telas de login, registro, acompanhamento e dashboard analítico.',
+        technologies: 'React.js, Node.js, Express, PostgreSQL, Google Sheets API (versão inicial)',
+        date: 'Out 2024',
+        url: 'https://dignamelius.com.br',
         images: [imgDignaMelius],
-    },
+    }
+    ,
     {
         id: 5,
         name: 'Intra Digna',
         type: 'Sistema Web',
-        description: 'Sistema de segurança e monitoramento.',
-        technologies: 'React, Node.js, MongoDB',
-        date: 'Jan 2023',
-        url: 'https://ltsecurity.com.br',
+        description: 'Sistema de intranet desenvolvido para centralizar informações, documentos e comunicados internos da empresa, com interface moderna e acessível.',
+        technologies: 'React.js,  Node.js',
+        date: 'Abr 2024',
+        url: 'https://intradigna.com.br',
         images: [imgIntraDigna],
-    },
+    }
+    ,
     {
         id: 6,
-        name: 'Registra aí Boy',
-        type: 'Sistema Web',
-        description: 'Sistema de segurança e monitoramento.',
-        technologies: 'React, Node.js, MongoDB',
-        date: 'Jan 2023',
-        url: 'https://ltsecurity.com.br',
+        name: 'Registra Aí Boy',
+        type: 'Sistema Web e Mobile',
+        description: 'Aplicação para motoboys cobradores registrarem negociações realizadas com clientes durante cobranças, com funcionalidades de autenticação, autorização e gestão de descontos.',
+        technologies: 'React.js, React Native, Node.js, PostgreSQL, JWT',
+        date: 'Jun 2024',
+        url: 'https://registraaiboy.com.br',
         images: [imgRegistraAiBoy],
-    },
+    }
+    ,
 ];
 
 export default function Portfolio() {
@@ -132,6 +138,13 @@ export default function Portfolio() {
                             <div className="card-overlay">
                                 <h3>{project.name}</h3>
                                 <p>{project.type}</p>
+                                <div className="tech-tags">
+                                    {project.technologies.split(', ').map((tech, techIndex) => (
+                                        <span key={techIndex} className="tech-tag">
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -69,45 +69,125 @@ export default function Skill() {
                             <div className="underline"></div>
                         </div>
                         <div className="skills-container">
-                            <div className="skill-card"><FaReact className="icon-skills" />
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <FaReact className="icon-skills" />
                                 React
 
                             </div>
-                            <div className="skill-card"><IoLogoNodejs className="icon-skills" />
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <IoLogoNodejs className="icon-skills" />
                                 NodeJS
                             </div>
-                            <div className="skill-card"><FaNode className="icon-skills" />
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <FaNode className="icon-skills" />
                                 Node
 
                             </div>
-                            <div className="skill-card"><RiJavascriptFill className="icon-skills" />
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <RiJavascriptFill className="icon-skills" />
                                 JavaScript
 
                             </div>
-                            <div className="skill-card"><BiLogoTypescript className="icon-skills" /> Typescript
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <BiLogoTypescript className="icon-skills" /> Typescript
                             </div>
-                            <div className="skill-card"><TbBrandReactNative className="icon-skills" /> React Native
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <TbBrandReactNative className="icon-skills" /> React Native
                             </div>
-                            <div className="skill-card"><SiExpress className="icon-skills" /> Express.js
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiExpress className="icon-skills" /> Express.js
                             </div>
-                            <div className="skill-card"><TbFileTypeSql className="icon-skills" /> SQL
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <TbFileTypeSql className="icon-skills" /> SQL
                             </div>
-                            <div className="skill-card"><BiLogoPostgresql className="icon-skills" /> PosygreSQL
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <BiLogoPostgresql className="icon-skills" /> PosygreSQL
                             </div>
-                            <div className="skill-card"><SiSqlite className="icon-skills" /> SQLite
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiSqlite className="icon-skills" /> SQLite
                             </div>
-                            <div className="skill-card"><SiHtml5 className="icon-skills" /> HTML5
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiHtml5 className="icon-skills" /> HTML5
 
                             </div>
-                            <div className="skill-card"><SiCss3 className="icon-skills" /> CSS3
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiCss3 className="icon-skills" /> CSS3
                             </div>
-                            <div className="skill-card"><FaGithubSquare className="icon-skills" /> Git/GitHub
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <FaGithubSquare className="icon-skills" /> Git/GitHub
                             </div>
-                            <div className="skill-card"><SiGooglemaps className="icon-skills" /> Google Maps API
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiGooglemaps className="icon-skills" /> Google Maps API
                             </div>
-                            <div className="skill-card"><SiGooglesheets className="icon-skills" /> Goglle Sheets API
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <SiGooglesheets className="icon-skills" /> Goglle Sheets API
                             </div>
-                            <div className="skill-card"><RiFileExcel2Fill className="icon-skills" /> Excel
+                            <div className="skill-card">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <RiFileExcel2Fill className="icon-skills" /> Excel
                             </div>
                         </div>
                     </div>
