@@ -187,7 +187,6 @@
 
 .tech-tag {
     background: rgba(30, 0, 50, 1);
-
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 14px;
@@ -220,7 +219,7 @@
     cursor: pointer;
     background: none;
     border: none;
-    color: VAR(--text-color-secondary);
+    color: var(--text-color-secondary);
     z-index: 1;
 }
 
@@ -231,19 +230,22 @@
     color: var(--text-color-secondary);
     padding: 20px;
     border-radius: 8px;
-    width: 90%;
-    max-width: 1000px;
-    max-height: 95vh;
+    width: 95%;
+    margin-left: 200px;
+    max-width: 1200px;
+    max-height: 100vh;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 /* Galeria */
 .modal-gallery {
     flex: 1;
     min-width: 250px;
+
 }
 
 .modal-gallery img {
@@ -255,6 +257,11 @@
 .modal-info {
     flex: 1;
     min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+
+
 }
 
 .modal-info h2 {
