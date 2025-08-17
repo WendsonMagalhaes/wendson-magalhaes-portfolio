@@ -10,7 +10,7 @@
 
 .portfolio-container {
     padding: 40px;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +92,6 @@
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 250px);
     gap: 8px;
     max-width: 1400px;
     padding: 20px;
@@ -113,21 +112,23 @@
     }
 }
 
-/* Estilos para os cards */
 .portfolio-card {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 340px;
 }
 
+/* Garantir que a imagem preencha o card */
 .portfolio-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
-    border-radius: 0px;
+    border-radius: 8px;
 }
 
 /* Overlay */
@@ -152,31 +153,7 @@
     transform: scale(1.1);
 }
 
-/* Estilo do grid específico */
-.card1 {
-    grid-column: 1;
-    grid-row: 1;
-}
 
-.card2 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.card3 {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-}
-
-.card4 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.card5 {
-    grid-column: 3;
-    grid-row: 2;
-}
 
 .tech-tags {
     margin-top: 10px;
@@ -208,6 +185,8 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+    padding: 10px;
+    /* Garante espaço interno em telas pequenas */
 }
 
 /* Fechar modal */
@@ -230,22 +209,25 @@
     color: var(--text-color-secondary);
     padding: 20px;
     border-radius: 8px;
-    width: 95%;
-    margin-left: 200px;
+    width: 100%;
+    /* Adapta-se à tela */
     max-width: 1200px;
-    max-height: 100vh;
+    max-height: 90vh;
+    /* Evita ultrapassar a altura da tela */
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
+    margin: 0 auto;
+    /* Centraliza no horizontal */
 }
 
 /* Galeria */
 .modal-gallery {
     flex: 1;
     min-width: 250px;
-
 }
 
 .modal-gallery img {
@@ -260,8 +242,6 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-
-
 }
 
 .modal-info h2 {
@@ -279,27 +259,35 @@
 @media (max-width: 768px) {
     .modal-content {
         flex-direction: column;
+        padding: 15px;
     }
 
     .modal-gallery,
     .modal-info {
         min-width: 100%;
     }
+
+    .modal-info {
+        padding: 10px;
+        box-shadow: none;
+        /* Mais leve em telas pequenas */
+    }
 }
 
+/* Navegação do modal */
 .modal-conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    /* Quebra linha se necessário */
 }
 
 .modal-nav {
     display: flex;
     justify-content: center;
-    width: 5%;
-    height: 10%;
-    flex: .1;
+    gap: 10px;
 }
 
 .modal-nav button {
@@ -309,14 +297,11 @@
     font-size: 30px;
     cursor: pointer;
     padding: 10px 20px;
-    transition: background 0.3s, color 0.3s;
+    transition: color 0.3s;
     outline: none;
-    box-shadow: none;
 }
 
 .modal-nav button:hover {
-    background: none;
-    border: none;
     color: var(--underline-color);
 }
 
@@ -324,14 +309,74 @@
     color: var(--underline-color);
 }
 
-@media (max-width: 480px) {
-    .portfolio-title {
-        font-size: calc(2.95rem + 4.4vw);
+/* Swiper container principal */
+.swiper {
+    width: 100%;
+    padding-bottom: 40px;
+    position: relative;
+    overflow: visible;
+    /* permite que as setas fiquem fora */
+}
 
+/* Setas */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #6E0184 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+
+/* Pontos de navegação (bullets) */
+/* Bullets do Swiper */
+.swiper-pagination-bullet {
+    width: 16px;
+    /* aumenta a largura */
+    height: 16px;
+    /* aumenta a altura */
+    background-color: #a243b0 !important;
+    /* roxo */
+    opacity: 1 !important;
+    margin: 0 6px;
+    /* espaçamento entre bullets */
+    transition: all 0.3s ease;
+    /* animação suave */
+}
+
+/* Bullet ativa */
+.swiper-pagination-bullet-active {
+    transform: scale(1.5);
+    background-color: #4e0061 !important;
+
+    /* aumenta ainda mais a ativa */
+    box-shadow: 0 0 10px #4e0061;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .swiper-button-prev {
+        left: -50px;
     }
 
-    .portfolio-subtitle {
-        font-size: 1.6rem;
+    .swiper-button-next {
+        right: -50px;
+    }
+}
 
+@media (max-width: 480px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 35px;
+        height: 35px;
     }
 }

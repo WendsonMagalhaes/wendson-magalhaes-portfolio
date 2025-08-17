@@ -99,7 +99,6 @@
     margin-bottom: 4px;
     color: var(--text-color-secondary);
     font-size: 22px;
-
 }
 
 .skill-service-info-text p {
@@ -119,7 +118,6 @@
     background-color: var(--icon-color);
     border-radius: 10px;
     margin: 0 auto;
-    /* centraliza na tela */
     box-sizing: border-box;
 }
 
@@ -127,21 +125,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
-    /* <-- ADICIONE ESTA LINHA */
     background-color: var(--bg-color-one);
-    padding: 20px 30px;
+    padding: 25px 40px;
     gap: 40px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
-    overflow: hidden;
-    /* Importante para esconder a animação fora do card */
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
-
 
 .skill-card:hover {
     border: 2px solid #D300FF;
@@ -149,108 +141,15 @@
         0 0 6px #D300FF,
         0 0 12px #D300FF,
         0 0 18px #D300FF;
-
     transform: translateY(-5px);
 }
+
+
 
 .icon-skills {
     color: var(--icon-color);
     font-size: 1.8rem;
 
-}
-
-.skill-card span {
-    position: absolute;
-    z-index: 1;
-}
-
-.skill-card span:nth-child(1) {
-    top: 0;
-    left: -200px;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to left, rgba(8, 20, 43, 0), #D300FF);
-    border-top-right-radius: 1px;
-    border-bottom-right-radius: 1px;
-    animation: animateTop 2s linear infinite;
-    animation-delay: 1s;
-}
-
-.skill-card span:nth-child(2) {
-    top: -70px;
-    right: 0;
-    width: 8px;
-    height: 100%;
-    background: linear-gradient(to top, rgba(8, 20, 43, 0), #D300FF);
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    animation: animateRight 2s linear infinite;
-    animation-delay: 2s;
-}
-
-.skill-card span:nth-child(3) {
-    bottom: 0;
-    right: 200px;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to right, rgba(8, 20, 43, 0), #D300FF);
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
-    animation: animateBottom 2s linear infinite;
-    animation-delay: 3s;
-}
-
-.skill-card span:nth-child(4) {
-    bottom: -70px;
-    left: 0px;
-    width: 8px;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #D300FF);
-    border-top-right-radius: 1px;
-    border-top-left-radius: 1px;
-    animation: animateLeft 2s linear infinite;
-    animation-delay: 4s;
-}
-
-
-@keyframes animateTop {
-    0% {
-        left: -200px
-    }
-
-    100% {
-        left: 200px;
-    }
-}
-
-@keyframes animateRight {
-    0% {
-        top: -70px;
-    }
-
-    100% {
-        top: 70px;
-    }
-}
-
-@keyframes animateLeft {
-    0% {
-        bottom: -70px;
-    }
-
-    100% {
-        bottom: 70px;
-    }
-}
-
-@keyframes animateBottom {
-    0% {
-        right: -200px;
-    }
-
-    100% {
-        right: 200px;
-    }
 }
 
 
